@@ -1,3 +1,26 @@
+React CLicky Memory Game 
+==============================================
+
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+
+## 🔑 How to Use the App:
+
+
+
+## 📁 Deployment Instructions
+
+Deployed version of the app can be found [here](DEPLOYED LINK HERE). To run this app on your machine, follow these instructions. Further options for running the app yourself can also be found in the ReadMe under the my-app section. 
+
+1. Clone this repository down to your machine.
+   
+2. You will need to have [Node.js](https://nodejs.org/en/) installed in order to continue. 
+   
+3. Enter `npm install` in your command line after navigating into the root directory, which will install the dependencies listed in the package.json.
+   
+4. Enter `node server.js`, which will initiate the server on http://localhost:3306.
+   
+5. Navigate to http://localhost:3306 in your browser, or ctrl-click the link that will be logged to your console. Enjoy!
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
@@ -66,3 +89,24 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+## 🔧 Technologies Used  
+
++ **HTML5** and **CSS3** for page content and styling.
+
++ **Bootstrap** as a CSS framework for styles and components.
+  
++ **React.js** as a JavaScript library for making the main structure of the app's UI.
+
++ **JavaScript** for the app's logic.
+  
++ **Node.JS** for the app's server environment.
+
++ **NPM** for installation of the packages required by the app.
+  
+
+## 🌌 Author 
+
+Thor Nolan—https://github.com/ThorNolan
+
