@@ -6,57 +6,57 @@
     },
     {
         "id": 2,
-        "color": "",
+        "color": "#FFDD1B",
         "isClicked": false
     },
     {
         "id": 3,
-        "color": "",
+        "color": "#B6FF00",
         "isClicked": false
     },
     {
         "id": 4,
-        "color": "",
+        "color": "#FF9900",
         "isClicked": false
     },
     {
         "id": 5,
-        "color": "",
+        "color": "#BA01FF",
         "isClicked": false
     },
     {
         "id": 6,
-        "color": "",
+        "color": "#FF1177",
         "isClicked": false
     },
     {
         "id": 7,
-        "color": "",
+        "color": "#EB2B12",
         "isClicked": false
     },
     {
         "id": 8,
-        "color": "",
+        "color": "#1a237e",
         "isClicked": false
     },
     {
         "id": 9,
-        "color": "",
+        "color": "#4DFEFF",
         "isClicked": false
     },
     {
         "id": 10,
-        "color": "",
+        "color": "#388e3c",
         "isClicked": false
     },
     {
         "id": 11,
-        "color": "",
+        "color": "#6d4c41",
         "isClicked": false
     },
     {
         "id": 12,
-        "color": "",
+        "color": "#F4FFEA",
         "isClicked": false
     }
 ]

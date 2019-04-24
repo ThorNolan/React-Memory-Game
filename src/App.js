@@ -39,13 +39,13 @@ class App extends Component {
     }
   };
 
-  // For mixing of the color tiles
+  // Handle mixing of the color tiles
   handleColorMix = () => {
     let mixedColors = colorMix(colors);
     this.setState({ colors: mixedColors });
   };
 
-  // For incrementing the score by 1 as user clicks on correct tiles
+  //  Handle incrementing the score by 1 as user clicks on correct tiles
   handleIncrement = () => {
     const incrementScore = this.state.currentScore + 1;
     this.setState({ currentScore: incrementScore});
@@ -56,7 +56,7 @@ class App extends Component {
     // Maybe put in a modal here that alerts user when they win (get 12 clicks)
   };
 
-  // For resetting the score (but not the high score!)
+  // Handle resetting the score (but not the high score!)
   handleReset = () => {
     this.setState({
       currentScore: 0,
@@ -92,7 +92,7 @@ class App extends Component {
                   handleIncrement={this.handleIncrement}
                   handleReset={this.handleReset}
                   id={color.id}
-                  style={color.color}
+                  bg={color.color}
                 />
               </Col>
             ))}
