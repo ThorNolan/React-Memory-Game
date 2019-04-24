@@ -18,12 +18,35 @@ class App extends Component {
     highScore: 0,
     clicked: [],
   };
+
+  // Event handler for clicks on color tiles
+  handleClick = id => {
+
+  };
+
+  // For mixing of the color tiles
+  handleColormix = () => {
+
+  };
+
+  // For incrementing the score as users click on tiles
+  handleIncrement = () => {
+
+  };
+
+  // For resetting the score (but not the high score!)
+  handleReset = () => {
+
+  };
   
   // Render my display for the main page of the application 
   render() {
     return (
       <Wrapper>
         <Navbar
+          title="Memory Color"
+          score={this.state.currentScore}
+          topScore={this.state.topScore}
         />
 
         <Container>
@@ -32,7 +55,18 @@ class App extends Component {
 
         <Container>
           <Row>
-
+            {this.state.colors.map(color => (
+              <Col size="md-3 sm-3">
+                <ColorTile
+                  key={color.id}
+                  handleClick={this.handleClick}
+                  handleIncrement={this.handleIncrement}
+                  handleReset={this.handleReset}
+                  id={color.id}
+                  style={color.color}
+                />
+              </Col>
+            ))}
           </Row>
         </Container>
       </Wrapper>

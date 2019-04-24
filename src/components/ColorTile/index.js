@@ -1,5 +1,5 @@
 import React from "react";
-import "./ColorTile.css";
+import "./Style.css";
 
 const ColorTile = props => {
     <div
