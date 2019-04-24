@@ -9,6 +9,16 @@ import Logo from './components/Logo'
 import colors from './colors.json'
 import './App.css';
 
+// Function for mixing up all the color tiles in the display
+function colorMix(arr) {
+  for (let i = arr.length -1; i > 0; i--) {
+    // Randomized placement of array components effectively mixes them all up each time this function is called
+    let j = Math.floor(Math.random() * (i + 1));
+    [arr[i], arr[j]] = [arr[j], arr[i]];
+  }
+  return arr;
+};
+
 class App extends Component {
 
   // Set the initial state of the app component 
@@ -16,17 +26,23 @@ class App extends Component {
     colors,
     currentScore: 0,
     highScore: 0,
-    clicked: [],
+    isClicked: [],
   };
 
   // Event handler for clicks on color tiles
   handleClick = id => {
-
+    if (this.state.isClicked.indexOf(id) === -1) {
+      this.handleIncrement();
+      this.setState({ isClicked: this.state.isClicked.concat(id) });
+    } else {
+      this.handleReset();
+    }
   };
 
   // For mixing of the color tiles
   handleColormix = () => {
-
+    let mixedColors = colorMix(colors);
+    this.setState({ colors: mixedColors });
   };
 
   // For incrementing the score as users click on tiles
@@ -45,9 +61,11 @@ class App extends Component {
       <Wrapper>
         <Navbar
           title="Memory Color"
-          score={this.state.currentScore}
-          topScore={this.state.topScore}
-        />
+          currentScore={this.state.currentScore}
+          highScore={this.state.highScore}
+        >
+          <Logo/>
+        </Navbar>
 
         <Container>
           <h3>Click the colors, but only once! Click the same color twice and your score will reset.</h3>
