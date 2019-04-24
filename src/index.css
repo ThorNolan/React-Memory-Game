@@ -9,7 +9,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100wh;
-	height: 90vh;
+	height: 85vh;
 	color: #fff;
 	background: linear-gradient(-45deg, rgb(5, 5, 5), #ee8c1d, rgb(35, 142, 213), rgb(240, 243, 242));
 	background-size: 400% 400%;

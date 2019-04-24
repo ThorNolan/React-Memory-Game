@@ -5,7 +5,7 @@ import Row from './components/Row';
 import Wrapper from './components/Wrapper';
 import Navbar from './components/Navbar';
 import ColorTile from './components/ColorTile';
-import Logo from './components/Logo'
+import Scorebox from './components/Scorebox'
 import colors from './colors.json'
 import './App.css';
 
@@ -40,19 +40,31 @@ class App extends Component {
   };
 
   // For mixing of the color tiles
-  handleColormix = () => {
+  handleColorMix = () => {
     let mixedColors = colorMix(colors);
     this.setState({ colors: mixedColors });
   };
 
-  // For incrementing the score as users click on tiles
+  // For incrementing the score by 1 as user clicks on correct tiles
   handleIncrement = () => {
-
+    const incrementScore = this.state.currentScore + 1;
+    this.setState({ currentScore: incrementScore});
+    // Set the high score to the incremented score if user gets to a higher number
+    if (incrementScore >= this.state.highScore) {
+      this.setState({ highScore: incrementScore})
+    }
+    // Maybe put in a modal here that alerts user when they win (get 12 clicks)
   };
 
   // For resetting the score (but not the high score!)
   handleReset = () => {
-
+    this.setState({
+      currentScore: 0,
+      highScore: this.state.highScore,
+      isClicked: []
+    });
+    // Mix up colors again after resetting current score and click status
+    this.handleColorMix();
   };
   
   // Render my display for the main page of the application 
@@ -61,14 +73,13 @@ class App extends Component {
       <Wrapper>
         <Navbar
           title="Memory Color"
-          currentScore={this.state.currentScore}
-          highScore={this.state.highScore}
-        >
-          <Logo/>
-        </Navbar>
+        />
 
         <Container>
-          <h3>Click the colors, but only once! Click the same color twice and your score will reset.</h3>
+          <Scorebox
+            currentScore={this.state.currentScore}
+            highScore={this.state.highScore}
+          />
         </Container>
 
         <Container>
