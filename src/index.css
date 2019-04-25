@@ -3,6 +3,7 @@
   font-family: 'Roboto-Condensed', sans-serif;
 }
 
+/* styling for shifting gradient background */
 body {
   margin: 0;
   padding: 0;
@@ -11,13 +12,14 @@ body {
   width: 100wh;
 	height: 85vh;
 	color: #fff;
-	background: linear-gradient(-45deg, rgb(5, 5, 5), #ee8c1d, rgb(35, 142, 213), rgb(240, 243, 242));
+	background: linear-gradient(-45deg, #32064A, #E56B1F, #FCD02C, #E42C6A);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
 	animation: Gradient 15s ease infinite;
 }
 
+/* The following keyframes accomplish the gradient background color effect (firefox and IE compatible) */
 @-webkit-keyframes Gradient {
 	0% {
 		background-position: 0% 50%

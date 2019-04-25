@@ -32,9 +32,12 @@ class App extends Component {
   // Event handler for clicks on color tiles
   handleClick = id => {
     if (this.state.isClicked.indexOf(id) === -1) {
+      // Increment score, update click state, and mix up the colors
       this.handleIncrement();
       this.setState({ isClicked: this.state.isClicked.concat(id) });
+      this.handleColorMix();
     } else {
+      // Reset score and mix up colors
       this.handleReset();
     }
   };
