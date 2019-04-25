@@ -5,7 +5,7 @@ const Navbar = props => {
   return (
     <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
       <div className="brand mx-auto">
-          <p className="animated heartBeat title"><a href="/">{props.title}</a></p>
+          <p className="animated flash title"><a href="/">{props.title}</a></p>
       </div>
     </nav>
   );

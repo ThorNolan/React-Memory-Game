@@ -61,13 +61,13 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 + **Bootstrap** as a CSS framework for styles and components.
   
-+ **React.js** as a JavaScript library for making the main structure of the app's UI.
++ **React.js** as the main UI library.
 
 + **JavaScript** for the app's logic.
   
 + **Node.JS** for the app's server environment.
 
-+ **NPM** for installation of the packages required by the app.
++ **NPM** for installation of the packages required by the app, listed as dependencies in the package.json.
   
 
 ## 🌌 Author 
