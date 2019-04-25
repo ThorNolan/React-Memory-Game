@@ -4,7 +4,7 @@ import "./style.css";
 const ColorTile = props => {
   return (
     <div
-    className="card"
+    className="card hvr-radial-out"
     value={props.id}
     onClick={() => props.handleClick(props.id)}
     style={{backgroundColor: props.bg}}

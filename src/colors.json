@@ -11,7 +11,7 @@
     },
     {
         "id": 3,
-        "color": "#4BFFA5",
+        "color": "#3FB196",
         "isClicked": false
     },
     {
@@ -21,12 +21,12 @@
     },
     {
         "id": 5,
-        "color": "#BA01FF",
+        "color": "#9B3A95",
         "isClicked": false
     },
     {
         "id": 6,
-        "color": "#D48166",
+        "color": "#FB9985",
         "isClicked": false
     },
     {
@@ -41,12 +41,12 @@
     },
     {
         "id": 9,
-        "color": "#4DFEFF",
+        "color": "#33FFED",
         "isClicked": false
     },
     {
         "id": 10,
-        "color": "#4BAC3F",
+        "color": "#45AF2A",
         "isClicked": false
     },
     {
@@ -56,7 +56,7 @@
     },
     {
         "id": 12,
-        "color": "#B89F5D",
+        "color": "#C19434",
         "isClicked": false
     }
 ]
