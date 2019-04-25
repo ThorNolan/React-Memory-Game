@@ -75,7 +75,7 @@ class App extends Component {
     return (
       <Wrapper>
         <Navbar
-          title="Memory Color"
+          title="MEMORY COLOR CLICKER"
         />
 
         <Container>
