@@ -10,13 +10,18 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   width: 100wh;
-	height: 85vh;
+	height: 200vh;
 	color: #fff;
 	background: linear-gradient(-45deg, #E56B1F, #32064A, #E42C6A, #FCD02C);
 	background-size: 400% 400%;
 	-webkit-animation: Gradient 15s ease infinite;
 	-moz-animation: Gradient 15s ease infinite;
 	animation: Gradient 15s ease infinite;
+}
+
+.col-md-3 {
+	padding-left: 0px;
+	padding-right: 0px;
 }
 
 /* The following keyframes accomplish the gradient background color effect (firefox and IE compatible) */

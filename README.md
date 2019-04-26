@@ -1,10 +1,11 @@
-React Clicky Memory Game 
+Memory Color Clicker
 ==============================================
 
+This is a simple memory game I built for my full-stack coding bootcamp. It was built with React, which it uses it to serve up front-end content and manipulate the DOM. The game is built primarily around one stateful app component that keeps track of user clicks, user score and high score, and the position of content on the page which needs to be re-rendered every time the user clicks. 
 
 ## 🔑 How to Use the App:
 
-
+Simple as this memory game is, it isn't quite so easy as it seems. Try to click on each of the colors exactly 1 time, for a maximum high score of 12 points. The problem is, each time you click a color, the positions of each color will be mixed up, so you'll really have to remember which colors you've clicked on. Some of the colors are preeeeetty similar too, so hopefully your memory is good...
 
 ## 📁 Deployment Instructions
 
@@ -16,13 +17,13 @@ Deployed version of the app can be found [here](DEPLOYED LINK HERE). To run this
    
 3. Enter `npm install` in your command line after navigating into the root directory, which will install the dependencies listed in the package.json.
    
-4. Enter `node server.js`, which will initiate the server on http://localhost:3306.
+4. Enter `npm start`, which will start the app on http://localhost:3000. More options for running the app below.
    
-5. Navigate to http://localhost:3306 in your browser, or ctrl-click the link that will be logged to your console. Enjoy!
+5. Navigate to http://localhost:3000 in your browser, or ctrl-click the link that will be logged to your console. Enjoy!
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+## Available Scripts 
 
 In the project directory, you can run:
 
@@ -59,13 +60,13 @@ To learn React, check out the [React documentation](https://reactjs.org/).
 
 + **HTML5** and **CSS3** for page content and styling.
 
-+ **Bootstrap** as a CSS framework for styles and components.
++ [Bootstrap](https://getbootstrap.com/) as a CSS framework for styles and components.
   
-+ **React.js** as the main UI library.
++ [React.js](https://reactjs.org/) as the main UI library.
 
-+ **JavaScript** for the app's logic.
++ [Javascript](https://www.javascript.com/) for the app's logic.
   
-+ **Node.JS** for the app's server environment.
++ [Node.js](https://nodejs.org/en/) for the app's runtime environment.
 
 + **NPM** for installation of the packages required by the app, listed as dependencies in the package.json.
   
