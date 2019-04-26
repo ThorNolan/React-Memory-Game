@@ -56,7 +56,9 @@ class App extends Component {
     if (incrementScore >= this.state.highScore) {
       this.setState({ highScore: incrementScore})
     }
-    // Maybe put in a modal here that alerts user when they win (get 12 clicks)
+    else if (incrementScore === 12) {
+      alert("👏  WE HAVE A WINNER!  👏")
+    }
   };
 
   // Handle resetting the score (but not the high score!)
