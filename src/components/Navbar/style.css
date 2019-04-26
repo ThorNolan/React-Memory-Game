@@ -30,7 +30,7 @@ nav.navbar.navbar-default {
 
 .title a:hover {
   text-decoration:none;
-  color: #FCD02C;
+  color: #E56B1F;
   -webkit-animation: none;
   -moz-animation: none;
   animation: none;
@@ -38,27 +38,50 @@ nav.navbar.navbar-default {
 
 @-webkit-keyframes neon1 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FCD02C, 0 0 70px #FCD02C, 0 0 80px #FCD02C, 0 0 100px #FCD02C, 0 0 150px #FCD02C;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #E56B1F, 0 0 70px #E56B1F, 0 0 80px #E56B1F, 0 0 100px #E56B1F, 0 0 150px #E56B1F;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FCD02C, 0 0 35px #FCD02C, 0 0 40px #FCD02C, 0 0 50px #FCD02C, 0 0 75px #FCD02C;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #E56B1F, 0 0 35px #E56B1F, 0 0 40px #E56B1F, 0 0 50px #E56B1F, 0 0 75px #E56B1F;
   }
 }
 
 @-moz-keyframes neon1 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FCD02C, 0 0 70px #FCD02C, 0 0 80px #FCD02C, 0 0 100px #FCD02C, 0 0 150px #FCD02C;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #E56B1F, 0 0 70px #E56B1F, 0 0 80px #E56B1F, 0 0 100px #E56B1F, 0 0 150px #E56B1F;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FCD02C, 0 0 35px #FCD02C, 0 0 40px #FCD02C, 0 0 50px #FCD02C, 0 0 75px #FCD02C;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #E56B1F, 0 0 35px #E56B1F, 0 0 40px #E56B1F, 0 0 50px #E56B1F, 0 0 75px #E56B1F;
   }
 }
 
 @keyframes neon1 {
   from {
-    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #FCD02C, 0 0 70px #FCD02C, 0 0 80px #FCD02C, 0 0 100px #FCD02C, 0 0 150px #FCD02C;
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #fff, 0 0 40px #E56B1F, 0 0 70px #E56B1F, 0 0 80px #E56B1F, 0 0 100px #E56B1F, 0 0 150px #E56B1F;
   }
   to {
-    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #FCD02C, 0 0 35px #FCD02C, 0 0 40px #FCD02C, 0 0 50px #FCD02C, 0 0 75px #FCD02C;
+    text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #fff, 0 0 20px #E56B1F, 0 0 35px #E56B1F, 0 0 40px #E56B1F, 0 0 50px #E56B1F, 0 0 75px #E56B1F;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .brand {
+    margin-top: -4px;
+  }
+
+  .title {
+    font-size: 32px;
+  }
+
+}
+
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+
+  .brand {
+    margin-top: -2px;
+  }
+
+  .title {
+    font-size: 28px;
   }
 }

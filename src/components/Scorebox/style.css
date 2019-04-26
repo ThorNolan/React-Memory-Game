@@ -1,5 +1,10 @@
-.scorebox h3, p {
-    font-family: 'Roboto Condensed', sans-serif; 
+.scorebox h3 {
+    font-family: 'Concert One', cursive;
+}
+
+.scorebox p {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-size: 22px;
 }
 
 .scorebox {
